@@ -22,6 +22,9 @@ BugBase* Bug::FindBugToEat() const
 			if (bug->disabled)
 				continue;
 
+			if (!bug->visible)
+				continue;
+
 			if (bug->id > id)
 				continue; // Can't eat that
 

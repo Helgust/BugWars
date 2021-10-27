@@ -77,7 +77,6 @@ void Game::OnRender() const
 void Game::AddObject(GameObject* object)
 {
 	to_add.push_back(object);
-	objects.push_back(object);
 	if (object->GetRTTI() == Bug::s_RTTI)
 		Log("I'm a bug");
 }
